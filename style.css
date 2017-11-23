@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 * {
     box-sizing: border-box;
+	font-family: 'Anonymous Pro', monospace;
 }
 body {
     background-color: rgb(22,21,21);
     width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	
 }
 .row:before, .row:after {
     content: " "; /* 1 */
@@ -227,12 +230,8 @@ keyframes {
 	
 	
 }
-.but a {
-	width: 100%;
-	margin-top: 20%;
-	
-}
-.but a button {
+
+.but button {
 	width: 100%;
 	font-size: 20px;
 	color: orange;
@@ -240,15 +239,21 @@ keyframes {
 	border: 3px solid orange;
 	border-radius: 10px;
 	cursor: pointer;
+	margin-top: 20%;
 	
 }
-.but a:hover button {
+.but a {
+	color: orange;
+}
+.but button:hover {
 	background-color: white;
 	color: black;
 	transition: 0.5s;
 	border: 3px solid black;
 }
-
+.but button:hover a {
+	color: black;
+}
 .opisImg {
 	width: 48%;
 	float: right;
@@ -388,12 +393,13 @@ keyframes {
 	text-align: center;
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.3);
-	height: 5%;	
+	/height: 5%;	
 }
 .stopka p {
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
+	padding: 20px;
 }
 
 
@@ -401,6 +407,7 @@ keyframes {
 	background-color: black;
 	color: white;
 	text-align: center;
+	padding: 2% 0;
 }
 
 /*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
