@@ -1,30 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-family: 'Anonymous Pro', monospace;
 }
+
 body {
-    background-color: rgb(22,21,21);
-    width: 100%;
+	background-color: rgb(22, 21, 21);
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	
 }
-.row:before, .row:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+
+.row:before,
 .row:after {
-    clear: both;
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
 }
+
+.row:after {
+	clear: both;
+}
+
 /* NAWIGACJA */
+
 .nawigacja {
-	
-	display: none; 
+
+	display: none;
 	background-color: black;
 	position: fixed;
 	width: 100%;
-
 }
 
 .nawigacja ul {
@@ -34,6 +40,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+
 .nawigacja ul li {
 	list-style-type: none;
 	height: auto;
@@ -41,55 +48,75 @@ body {
 	text-transform: uppercase;
 	margin: 20px 20px;
 	font-weight: bold;
-	
 }
+
 .nawigacja ul li:hover a {
 	background-color: whitesmoke;
 	color: black;
 	transition: 0.8s;
 }
+
 .nawigacja a {
 	text-decoration: none;
 	color: white;
 	padding: 15px 5px;
 	border-radius: 3px;
 }
+
 /* DIV INTRO */
+
 .title {
 	white-space: nowrap;
 	overflow: hidden;
 	width: 25em;
-	animation: type2 2s steps(60,end);
+	animation: type2 2s steps(60, end);
 	margin: 0 auto;
 }
-.colortitle, .colortitle1, .migaj {
+
+.colortitle,
+.colortitle1,
+.migaj {
 	color: orange;
-	font-size: 26px;	
+	font-size: 26px;
 }
+
 .intro {
 	padding-top: 20%;
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
-	
 }
+
 .migaj {
 	animation: blink 1s infinite;
 }
+
 @keyframes blink {
-	to{opacity: .0;}
+	to {
+		opacity: .0;
+	}
 }
-@keyframes type2{
-  0%{width: 0;}
-  50%{width: 30;}
-  100%{ width: 100; } 
-} 
-::selection{
-  background: black;
+
+@keyframes type2 {
+	0% {
+		width: 0;
+	}
+	50% {
+		width: 30;
+	}
+	100% {
+		width: 100;
+	}
 }
+
+::selection {
+	background: black;
+}
+
 .intro a {
 	color: white;
 }
+
 .arrow {
 	margin-top: 20%;
 	font-size: 60px;
@@ -97,6 +124,7 @@ body {
 	position: inherit;
 	cursor: pointer;
 }
+
 .arrow:hover {
 	transform: translateY(5px);
 	color: orange;
@@ -104,37 +132,42 @@ body {
 }
 
 keyframes {
-	0%{width: 0;}
-	100%{width: 25;}
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 25;
+	}
 }
+
 /* SEKCJA O MNIE */
 
 .about {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
-	
+
 }
 
 .oMnie {
 	text-align: center;
 	margin: 5% 20%;
-	
-	
 	color: white;
 	padding: 10px;
 	padding-top: 200px;
-	
 }
+
 .oMnie a {
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
 	margin-top: 200px;
 }
+
 .oMnie p {
 	font-size: 24px;
 	line-height: 1em;
 }
+
 .oMnie button {
 	padding: 10px 30px;
 	border: 2px solid black;
@@ -142,19 +175,23 @@ keyframes {
 	background-color: white;
 	margin-top: 20%;
 }
-.oMnie button:hover  {
+
+.oMnie button:hover {
 	background-color: black;
 	color: white;
 	border: 2px solid white;
 	transition: 0.3s;
 }
+
 .oMnie button:hover a {
 	color: white;
 	transition: 0.5s;
 }
+
 .cv {
 	font-size: 20px
 }
+
 /* TECHNOLOGIE */
 
 .znam {
@@ -165,6 +202,7 @@ keyframes {
 	text-align: center;
 	margin-top: 5%;
 }
+
 .img1 {
 	display: flex;
 	flex-direction: row;
@@ -175,37 +213,37 @@ keyframes {
 	margin: 0% 10%;
 	padding: 0;
 }
+
 .img1 li {
 	width: 30%;
 	padding: 20px;
 	margin: 20px;
 }
+
 .img1 .titl {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: bold;
 	color: white;
 	text-align: center;
-	
+
 }
+
 .img1 .titl::after {
-	content: ""; 
-	display: block; 
-	height: 2px; 
-	background: red; 
+	content: "";
+	display: block;
+	height: 2px;
+	background: red;
 	width: 30%;
 	margin: 0 auto;
-	
 }
+
 .img1 .inf {
-	font-size: 20px; 
+	font-size: 20px;
 	text-align: center;
 	font-weight: bold;
 	color: white;
-	
 }
-
-
 
 .pro {
 	width: 40%;
@@ -213,22 +251,20 @@ keyframes {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
 }
+
 .projekt {
 	margin-top: 15px;
 }
+
 .but {
 	display: flex;
 	flex-direction: row;
-	
 	float: left;
 	width: 18%;
 	flex-wrap: wrap;
 	margin-left: 20%;
 	margin-right: 10%;
-	
-	
 }
 
 .but button {
@@ -240,32 +276,33 @@ keyframes {
 	border-radius: 10px;
 	cursor: pointer;
 	margin-top: 20%;
-	
 }
+
 .but a {
 	color: orange;
 }
+
 .but button:hover {
 	background-color: white;
 	color: black;
 	transition: 0.5s;
 	border: 3px solid black;
 }
+
 .but button:hover a {
 	color: black;
 }
+
 .opisImg {
 	width: 48%;
 	float: right;
 	height: 100px;
 	background-position: center;
-	background-size:cover;
+	background-size: cover;
 	height: 150px;
 	border: 2px solid white;
 	border-radius: 15px;
-	
 }
-
 
 .opisImg p {
 	width: 100%;
@@ -278,61 +315,68 @@ keyframes {
 	padding: 5px;
 	visibility: hidden;
 }
+
 .opisImg:hover p {
 	visibility: visible;
 	opacity: 1;
 }
+
 .opisImg:hover {
 	opacity: 0.7;
 	border: 2px solid silver;
 	box-shadow: 3px 4px silver;
 	transition: 1s;
-	
 }
+
 .opisImg:hover p {
 	visibility: visible;
-	
 }
+
 .pic1 {
 	background-image: url("http://imageshack.com/a/img923/2010/B8JDSb.png");
-	
 }
+
 .pic2 {
 	background-image: url("http://i.imgur.com/oT2WH8x.png");
 }
+
 .pic3 {
 	background-image: url("http://i.imgur.com/YqEryrQ.png");
 }
+
 .pic4 {
 	background-image: url("http://i.imgur.com/KYEJ7MM.png");
 }
+
 .pic5 {
 	background-image: url("http://imageshack.com/a/img924/5732/2l0Wy4.png");
 }
+
 .pic6 {
 	background-image: url("http://imageshack.com/a/img923/1056/Mg73g3.png");
 }
+
 .pic7 {
 	background-image: url("http://imageshack.com/a/img924/2861/vMBDvM.png");
 }
+
 .pic8 {
 	background-image: url("http://imageshack.com/a/img924/1418/wV1zf4.png");
-	
 }
 
 .projekty {
 	margin-top: 10%;
 	background-color: rgba(0, 0, 0, 0.3);
-	padding-bottom: 100px;;
+	padding-bottom: 100px;
 }
+
 .doInnych {
 	width: 25%;
 	margin: 0 auto;
 	margin-top: 25%;
-	
 	text-align: right;
-	
 }
+
 .doInnych button {
 	padding: 10px;
 	border-radius: 10px;
@@ -340,66 +384,73 @@ keyframes {
 	font-size: 16px;
 	font-weight: bold;
 	border: 2px solid white;
-	
 }
+
 .doInnych:hover button {
 	background-color: black;
 	color: white;
 	transition: 0.5s;
-	
 }
-
 
 .social .icon-btn {
-    width: 75px;
-    height: 75px;
-    background-color: inherit;
-    border-radius: 50%;
-    cursor: pointer;
-    
-    margin: 10px;
-    border-style: none;;
+	width: 75px;
+	height: 75px;
+	background-color: inherit;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 10px;
+	border-style: none;
 }
+
 .social .fa-facebook {
-    color: #3B5998;
+	color: #3B5998;
 	font-size: 40px;
 }
+
 .social .fa-github {
-    color: black;
+	color: black;
 	font-size: 40px;
 }
+
 .social .fa-linkedin {
-    color: #006fa6;
+	color: #006fa6;
 	font-size: 40px;
 }
+
 .social .linkedin:hover {
-    background-color: #006fa6;
+	background-color: #006fa6;
 }
 
 .social .icon-btn:hover {
-    transform: scale(1.10);
-    transition: 0.7s;
+	transform: scale(1.10);
+	transition: 0.7s;
 }
+
 .social .facebook:hover {
-    background-color: #3B5998;
+	background-color: #3B5998;
 }
+
 .social .github:hover {
-    background-color: black;
+	background-color: black;
 }
-.social .facebook:hover .fa-facebook, .social .linkedin:hover .fa-linkedin, .social .github:hover .fa-github, .niceButton {
-    color: white;
+
+.social .facebook:hover .fa-facebook,
+.social .linkedin:hover .fa-linkedin,
+.social .github:hover .fa-github,
+.niceButton {
+	color: white;
 }
+
 .kontakt i {
 	font-size: 20px;
 	color: white;
-	
 }
 
 .kontakt {
 	text-align: center;
 	margin-top: 5%;
-	
 }
+
 .kontakt p {
 	font-size: 21px;
 	font-weight: bold;
@@ -410,15 +461,14 @@ keyframes {
 	text-align: center;
 	margin: 0;
 	background-color: rgba(0, 0, 0, 0.3);
-	/height: 5%;	
 }
+
 .stopka p {
 	font-size: 20px;
 	font-weight: bold;
 	color: white;
 	padding: 20px;
 }
-
 
 .imie {
 	background-color: black;
@@ -428,49 +478,62 @@ keyframes {
 }
 
 /*--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!--*/
+
 /*-------------------------COLUMN-------------------------*/
+
 /*--------------------------------------------------------*/
 
 [class*="col-"] {
-    float: left;
-    min-height: 35px;  
+	float: left;
+	min-height: 35px;
 }
 
 .col-1 {
-    width: 8.33%;
+	width: 8.33%;
 }
+
 .col-2 {
-    width: 16.66%;
+	width: 16.66%;
 }
+
 .col-3 {
-    width: 25%;
+	width: 25%;
 }
+
 .col-4 {
-    width: 33.33%;
+	width: 33.33%;
 }
+
 .col-5 {
-    width: 41.66%;
+	width: 41.66%;
 }
+
 .col-6 {
-    width: 50%;
+	width: 50%;
 }
+
 .col-7 {
-    width: 58.33%;
+	width: 58.33%;
 }
+
 .col-8 {
-    width: 66.66%;
+	width: 66.66%;
 }
+
 .col-9 {
-    width: 75%;
+	width: 75%;
 }
+
 .col-10 {
-    width: 83.33%;
+	width: 83.33%;
 }
+
 .col-11 {
-    width: 91.66%;
+	width: 91.66%;
 }
+
 .col-12 {
-    width: 100%;
+	width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -486,9 +549,8 @@ keyframes {
 		margin: 0 auto;
 		margin-top: 10px;
 		padding: 10px;
-		
 	}
-	
+
 	.oMnie {
 		margin: 5% 10%;
 	}
@@ -502,37 +564,36 @@ keyframes {
 		width: 90%;
 		margin: 0 5%;
 	}
-	.img1 .titl, .img1 .inf {
-		font-size: 18px;	
+	.img1 .titl,
+	.img1 .inf {
+		font-size: 18px;
 	}
-	
+
 	.pro {
 		width: 90%;
 		margin: 0 auto;
-		
 	}
-	
-	
 }
+
 @media (max-width: 460px) {
 	.title {
 		font-size: 16px;
 		width: 90%;
 	}
-	
+
 	.colortitle {
 		font-size: 18px;
 	}
-	
+
 	.oMnie {
 		font-size: 14px;
 	}
-	.oMnie p, .colortitle1 {
+	.oMnie p,
+	.colortitle1 {
 		font-size: 20px;
 	}
 	.opisImg p {
 		font-size: 15px;
 	}
 }
-
 
