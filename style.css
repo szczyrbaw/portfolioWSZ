@@ -26,7 +26,6 @@ body {
 /* NAWIGACJA */
 
 .nawigacja {
-
 	display: none;
 	background-color: black;
 	position: fixed;
@@ -85,6 +84,7 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
+	margin-bottom: 3%;
 }
 
 .migaj {
@@ -141,11 +141,13 @@ keyframes {
 }
 
 /* SEKCJA O MNIE */
-
+.about, #techno, #projekty, #kontakt, .stopka {
+	display: none;
+}
 .about {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
-
+	
 }
 
 .oMnie {
@@ -362,6 +364,9 @@ keyframes {
 
 .pic8 {
 	background-image: url("http://imageshack.com/a/img924/1418/wV1zf4.png");
+}
+.pic9 {
+	background-image: url("https://i.imgur.com/eIOD6W1.png");
 }
 
 .projekty {

@@ -2,6 +2,11 @@ $(document).ready(function() {
  	$("#show").click(function() {
 		
 		$("#nawigacja").show("slow");
+		$("#about").show("fast");
+		$("#techno").show("fast");
+		$("#projekty").show("fast");
+		$("#kontakt").show("fast");
+		$("#stopka").show("fast");
 	});
 	$('a[href^="#"]').on('click', function(event) {
 	
@@ -14,4 +19,5 @@ $(document).ready(function() {
 			}, 700);
 		}
 	});
+	
 });
