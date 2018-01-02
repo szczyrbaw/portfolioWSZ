@@ -369,7 +369,7 @@ keyframes {
 	background-image: url("https://i.imgur.com/eIOD6W1.png");
 }
 
-.projekty {
+.projekty, .projekty2 {
 	margin-top: 10%;
 	background-color: rgba(0, 0, 0, 0.3);
 	padding-bottom: 100px;
