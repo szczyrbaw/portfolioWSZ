@@ -379,22 +379,25 @@ keyframes {
 	width: 25%;
 	margin: 0 auto;
 	margin-top: 25%;
-	text-align: right;
-}
-
-.doInnych button {
 	padding: 10px;
 	border-radius: 10px;
-	color: black;
 	font-size: 16px;
 	font-weight: bold;
 	border: 2px solid white;
 }
 
-.doInnych:hover button {
+.doInnych:hover {
 	background-color: black;
-	color: white;
 	transition: 0.5s;
+}
+.doInnych:hover a {
+    color: white;
+    transition: 0.5s;
+}
+
+.doInnych a {
+    text-decoration: none;
+    color: black;
 }
 
 .social .icon-btn {
