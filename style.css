@@ -11,18 +11,6 @@ body {
 	padding: 0;
 }
 
-.row:before,
-.row:after {
-	content: " ";
-	/* 1 */
-	display: table;
-	/* 2 */
-}
-
-.row:after {
-	clear: both;
-}
-
 /* NAWIGACJA */
 
 .nawigacja {
@@ -413,6 +401,7 @@ keyframes {
 .social .fa-facebook {
 	color: #3B5998;
 	font-size: 40px;
+    
 }
 
 .social .fa-github {
@@ -428,6 +417,7 @@ keyframes {
 .social .linkedin:hover {
 	background-color: #006fa6;
 }
+
 
 .social .icon-btn:hover {
 	transform: scale(1.10);
