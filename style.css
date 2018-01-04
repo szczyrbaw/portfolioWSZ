@@ -18,6 +18,7 @@ body {
 	background-color: black;
 	position: fixed;
 	width: 100%;
+    z-index: 1;
 }
 
 .nawigacja ul {
@@ -52,7 +53,7 @@ body {
 
 /* DIV INTRO */
 
-.title {
+.tytul {
 	white-space: nowrap;
 	overflow: hidden;
 	width: 25em;
@@ -60,8 +61,8 @@ body {
 	margin: 0 auto;
 }
 
-.colortitle,
-.colortitle1,
+.tytulKolor,
+.tytulKolor1,
 .migaj {
 	color: orange;
 	font-size: 26px;
@@ -128,11 +129,19 @@ keyframes {
 	}
 }
 
+.row:before, .row:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.row:after {
+    clear: both;
+}
+
 /* SEKCJA O MNIE */
-.about, #techno, #projekty, #kontakt, .stopka {
+.sekcjaOmnie, #techno, #projekty, #kontakt, .stopka {
 	display: none;
 }
-.about {
+.sekcjaOmnie {
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	
@@ -144,43 +153,35 @@ keyframes {
 	color: white;
 	padding: 10px;
 	padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.oMnie a {
-	text-decoration: none;
-	color: black;
-	font-weight: bold;
-	margin-top: 200px;
-}
+
 
 .oMnie p {
 	font-size: 24px;
 	line-height: 1em;
 }
 
-.oMnie button {
+.oMnie .link {
 	padding: 10px 30px;
 	border: 2px solid black;
-	border-radius: 10px;
+	border-radius: 8px;
 	background-color: white;
-	margin-top: 20%;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin-top: 20px;
+
 }
 
-.oMnie button:hover {
+.oMnie a:hover {
 	background-color: black;
 	color: white;
 	border: 2px solid white;
 	transition: 0.3s;
 }
 
-.oMnie button:hover a {
-	color: white;
-	transition: 0.5s;
-}
-
-.cv {
-	font-size: 20px
-}
 
 /* TECHNOLOGIE */
 
@@ -210,7 +211,7 @@ keyframes {
 	margin: 20px;
 }
 
-.img1 .titl {
+.img1 .tyt {
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -219,7 +220,7 @@ keyframes {
 
 }
 
-.img1 .titl::after {
+.img1 .tyt::after {
 	content: "";
 	display: block;
 	height: 2px;
@@ -245,6 +246,7 @@ keyframes {
 
 .projekt {
 	margin-top: 15px;
+    
 }
 
 .but {
@@ -292,6 +294,7 @@ keyframes {
 	height: 150px;
 	border: 2px solid white;
 	border-radius: 15px;
+    z-index: 0;
 }
 
 .opisImg p {
@@ -316,10 +319,11 @@ keyframes {
 	border: 2px solid silver;
 	box-shadow: 3px 4px silver;
 	transition: 1s;
+    
 }
 
-.opisImg:hover p {
-	visibility: visible;
+.opisImg:hover .nawigacja ul {
+    z-index: 2;
 }
 
 .pic1 {
@@ -388,7 +392,7 @@ keyframes {
     color: black;
 }
 
-.social .icon-btn {
+.media .icon-btn {
 	width: 75px;
 	height: 75px;
 	background-color: inherit;
@@ -398,44 +402,43 @@ keyframes {
 	border-style: none;
 }
 
-.social .fa-facebook {
+.media .fa-facebook {
 	color: #3B5998;
 	font-size: 40px;
     
 }
 
-.social .fa-github {
+.media .fa-github {
 	color: black;
 	font-size: 40px;
 }
 
-.social .fa-linkedin {
+.media .fa-linkedin {
 	color: #006fa6;
 	font-size: 40px;
 }
 
-.social .linkedin:hover {
+.media .linkedin:hover {
 	background-color: #006fa6;
 }
 
 
-.social .icon-btn:hover {
+.media .icon-btn:hover {
 	transform: scale(1.10);
 	transition: 0.7s;
 }
 
-.social .facebook:hover {
+.media .facebook:hover {
 	background-color: #3B5998;
 }
 
-.social .github:hover {
+.media .github:hover {
 	background-color: black;
 }
 
-.social .facebook:hover .fa-facebook,
-.social .linkedin:hover .fa-linkedin,
-.social .github:hover .fa-github,
-.niceButton {
+.media .facebook:hover .fa-facebook,
+.media .linkedin:hover .fa-linkedin,
+.media .github:hover .fa-github {
 	color: white;
 }
 
@@ -562,7 +565,7 @@ keyframes {
 		width: 90%;
 		margin: 0 5%;
 	}
-	.img1 .titl,
+	.img1 .tyt,
 	.img1 .inf {
 		font-size: 18px;
 	}
@@ -574,12 +577,12 @@ keyframes {
 }
 
 @media (max-width: 460px) {
-	.title {
+	.tytul {
 		font-size: 16px;
 		width: 90%;
 	}
 
-	.colortitle {
+	.tytulKolor {
 		font-size: 18px;
 	}
 
@@ -587,7 +590,7 @@ keyframes {
 		font-size: 14px;
 	}
 	.oMnie p,
-	.colortitle1 {
+	.tytulKolor1 {
 		font-size: 20px;
 	}
 	.opisImg p {

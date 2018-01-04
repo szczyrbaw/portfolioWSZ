@@ -11,7 +11,7 @@ $(document).ready(function() {
         }, 700);
     }
 
-    $("#show").click(function() {
+    $("#pokaz").click(function() {
         showSite();
     });
 		/*$("#nawigacja").show("slow");
