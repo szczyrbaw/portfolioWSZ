@@ -311,13 +311,12 @@ keyframes {
 
 .opisImg:hover p {
 	visibility: visible;
-	opacity: 1;
 }
 
 .opisImg:hover {
 	opacity: 0.7;
-	border: 2px solid silver;
-	box-shadow: 3px 4px silver;
+	border: 2px solid white;
+	box-shadow: 3px 3px lightslategrey;
 	transition: 1s;
     
 }
